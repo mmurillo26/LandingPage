@@ -30,12 +30,15 @@
 
 .ma-2{margin:2px;}.mt-2{margin-top:2px;}.mb-2{margin-bottom:2px;}.ml-2{margin-left:2px;}.mr-2{margin-right:2px;}.ma-5{margin:5px;}.mt-5{margin-top:5px;}.mb-5{margin-bottom:5px;}.ml-5{margin-left:5px;}.mr-5{margin-right:5px;}.ma-10{margin:10px;}.mt-10{margin-top:10px;}.mb-10{margin-bottom:10px;}.ml-10{margin-left:10px;}.mr-10{margin-right:10px;}
 .pd-2{padding: 2px;}.pdx-2{padding: 2px 0;}.pdy-2{padding: 0 2px;}.pd-5{padding: 5px;}.pdx-5{padding: 5px 0;}.pdy-5{padding: 0 5px;}.pd-10{padding: 10px;}.pdx-10{padding: 10px 0;}.pdy-10{padding: 0 10px;}
+
 .d-flex{display:flex;}
 .d-flex-column{flex-direction:column;}
 .d-flex-row{flex-direction:row;}
 .justify-content-around{justify-content:space-around;}.justify-content-between{justify-content:space-between;}.justify-content-center{justify-content:center;}
 .align-items-center{align-items:center;}.align-items-end{align-items:flex-end;}.align-items-start{align-items:flex-start;}
 
+.d-grid{display: grid;}
+.g-gap-10{grid-gap: 10px;}.g-gap-5{grid-gap: 5px;}.g-gap-15{grid-gap: 15px;}.g-gap-20{grid-gap: 20px;}.g-gap-30{grid-gap: 30px;}.g-gap-40{grid-gap: 40px;}.g-gap-50{grid-gap: 50px;}
 
 }
 
@@ -119,7 +122,7 @@
 
   .fa-star{
     font-size: 50px;
-    color: white;
+    color: var(--yellow);
   }
 /* Header */
 
@@ -140,10 +143,21 @@ header{
 }
 
 h1{
-  font-family: sans-serif;
+  font-family: var(--font-family-sans-serif);
   font-size: 70px;
   text-transform: uppercase;
   color: white;
+  text-shadow: black 2px 2px 5px;
+}
+
+h2{
+  font-family: var(--font-family-sans-serif);
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  color: var(--yellow);
+  text-shadow: black 2px 2px 5px;
 }
 
 .img-player{
@@ -171,4 +185,46 @@ h1{
 
 .star-logo div:after {
   --direction: right;
+}
+
+/* plans section */
+
+.plans-section{
+ padding: 100px;
+}
+
+.plans{
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10rem;
+  margin: 20px 0;
+}
+
+.img-plans{
+  width: auto;
+  display: grid;
+}
+
+.items-plans{
+  width: 100%;
+}
+
+h3{
+  font-family: var(--font-family-sans-serif);
+  font-size: 40px;
+  text-align: center;
+}
+
+.info-plan:hover{
+  cursor: pointer;
+}
+
+/* about section */
+
+#about{
+  background: var(--success);
+  padding: 100px;
+}
+
+.about-section h2{
+  padding: 20px;
 }
