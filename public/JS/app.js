@@ -1,6 +1,18 @@
-function comenzar(){
+function page(){
+// -------------- Top Navbar
+var btn = document.getElementById('menuBtn');
 
-// -------------- Scrollbar
+btn.onclick = function() {
+  var x = document.getElementById("topNav");
+  if (x.className === "navbar-nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar-nav";
+  }
+}
+
+
+// -------------- Scroll topbar
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -17,7 +29,7 @@ var about = document.getElementById('about');
 var aboutover = document.getElementById('aboutover');
 var contact = document.getElementById('contact');
 var contactover = document.getElementById('contactover');
-
+var home = document.getElementById('header');
 
 
 plans.onmouseover = function() {
@@ -38,26 +50,11 @@ contact.onmouseover = function() {
   contactover.style.background = "var(--success)";
 }
 
-// ------------- Modals
-var modal = document.getElementById("myModal");
-
-var opn = document.getElementById("opnModal");
-
-var span = document.getElementById("close");
-
-opn.onclick = function() {
-  modal.style.display = "block";
-}
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+home.onmouseover = function() {
+  plansover.style.background = "var(--secondary)";
+  aboutover.style.background = "var(--secondary)";
+  contactover.style.background = "var(--secondary)";
 }
 
 }
-window.addEventListener("load",comenzar,false);
+window.addEventListener("load",page,false);
