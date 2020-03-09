@@ -10,7 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   </head>
-  <body id="page-top">
+  <body id="page-top" data-spy="scroll" data-target=".navbar-nav" data-offset="50">
 
     <!-- navbar -->
     <nav class="navbar d-flex align-items-center fixed-top" id="mainNav">
@@ -21,10 +21,10 @@
           </button>
         </div>
         <div id="topNav" class="navbar-nav">
-          <ul>
-            <li class="nav-items"><a id="plansover" href="#plans">Plans</a></li>
-            <li class="nav-items"><a id="aboutover" href="#about">About</a></li>
-            <li class="nav-items"><a id="contactover" href="#contact">Contact</a></li>
+          <ul id="nav-list">
+            <li class="nav-items"><a id="plansBnt" class="dropdown-item" href="#plans">Plans</a></li>
+            <li class="nav-items"><a id="aboutBtn" class="dropdown-item" href="#about">About</a></li>
+            <li class="nav-items"><a id="contactBtn" class="dropdown-item" href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -53,9 +53,13 @@
           <i class="fa fa-star"></i>
         </div>
       </div>
+      <div class="">
+        <h3>Choose your prefer Plan</h3>
+      </div>
       <div class="plans d-grid">
         <div class="img-plans info-plan" data-toggle="modal" data-target="#myModal1">
           <img src="assets/soccer.png" class="items-plans">
+          <p class="moreView">+</p>
           <h3>Soccer <i class="fas fa-futbol"></i></h3>
         </div>
         <div id="myModal1" class="modal">
@@ -83,6 +87,7 @@
 
         <div class="img-plans info-plan" data-toggle="modal" data-target="#myModal2">
           <img src="assets/football.png" class="items-plans">
+          <p class="moreView">+</p>
           <h3>Football <i class="fas fa-football-ball"></i></h3>
         </div>
         <div id="myModal2" class="modal">
@@ -110,6 +115,7 @@
 
         <div class="img-plans info-plan" data-toggle="modal" data-target="#myModal3">
           <img src="assets/baseball.png" class="items-plans">
+          <p class="moreView">+</p>
           <h3>Baseball <i class="fas fa-baseball-ball"></i></h3>
         </div>
         <div id="myModal3" class="modal">
@@ -137,6 +143,7 @@
 
         <div class="img-plans info-plan" data-toggle="modal" data-target="#myModal4">
           <img src="assets/basketball.png" class="items-plans">
+          <p class="moreView">+</p>
           <h3>Basketball <i class="fas fa-basketball-ball"></i></h3>
         </div>
         <div id="myModal4" class="modal">
@@ -164,6 +171,7 @@
 
         <div class="img-plans info-plan" data-toggle="modal" data-target="#myModal5">
           <img src="assets/racket.png" class="items-plans">
+          <p class="moreView">+</p>
           <h3>Tennis <i class="fas fa-table-tennis"></i></h3>
         </div>
         <div id="myModal5" class="modal">
@@ -191,6 +199,7 @@
 
         <div class="img-plans info-plan" data-toggle="modal" data-target="#myModal6">
           <img src="assets/swimming.png" class="items-plans">
+          <p class="moreView">+</p>
           <h3>Swimming <i class="fas fa-swimmer"></i></h3>
         </div>
         <div id="myModal6" class="modal">
