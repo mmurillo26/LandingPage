@@ -6,7 +6,7 @@ function page(){
   btn.onclick = function() {
     var x = document.getElementById("topNav");
     if (x.className === "navbar-nav") {
-      x.className += " responsive";
+      x.className += " responsive-lg";
     } else {
       x.className = "navbar-nav";
     }
@@ -27,6 +27,25 @@ function page(){
     } else {
       document.getElementById("mainNav").style.padding = "1rem";
     }
+  }
+
+  document.getElementsByClassName('info-plan')[0].onmouseover = function() {
+    document.getElementsByClassName("moreView")[0].style.display = "block";
+  }
+  document.getElementsByClassName('info-plan')[1].onmouseover = function() {
+    document.getElementsByClassName("moreView")[1].style.display = "block";
+  }
+  document.getElementsByClassName('info-plan')[2].onmouseover = function() {
+    document.getElementsByClassName("moreView")[2].style.display = "block";
+  }
+  document.getElementsByClassName('info-plan')[3].onmouseover = function() {
+    document.getElementsByClassName("moreView")[3].style.display = "block";
+  }
+  document.getElementsByClassName('info-plan')[4].onmouseover = function() {
+    document.getElementsByClassName("moreView")[4].style.display = "block";
+  }
+  document.getElementsByClassName('info-plan')[5].onmouseover = function() {
+    document.getElementsByClassName("moreView")[5].style.display = "block";
   }
 }
 window.addEventListener("load",page,false);
