@@ -13,7 +13,7 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "node-sass-middleware": "^0.11.0",
-    "pug": "^2.0.4"
+    "pug": "^3.0.1"
   },
   "main": "\u001b[A\u001b\u001b[B\u001b[\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[{  \"name\": \"uv-landing-page\",  \"version\": \"0.0.0\",  \"private\": true,  \"scripts\": {    \"start\": \"node ./bin/www\"  },  \"dependencies\": {    \"bootstrap\": \"^4.3.1\",    \"cookie-parser\": \"~1.4.4\",    \"debug\": \"~2.6.9\",    \"express\": \"^4.16.4\",    \"http-errors\": \"~1.6.3\",    \"morgan\": \"~1.9.1\",    \"node-sass-middleware\": \"^0.11.0\",    \"pug\": \"^2.0.0-beta11\"  }}",
   "devDependencies": {},
